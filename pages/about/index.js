@@ -32,11 +32,32 @@ export default function Home() {
             </p>
 
             <p>
-              So nice to see you here, checkout my side-projects.
+              So nice to see you here, to make you know me a littler better, 
+              i'm gonna tell you about me.
+            </p>
+
+            <h3>Story time</h3>
+
+            <p>
+              I`m 21 years old dude that loves his girlfriend very much and who is` moving to live by 
+              myself, doing it to improve as a person, become independent and more responsable.
             </p>
 
             <p>
-              <a href="https://github.com/gusbedasi">My Github profile</a>
+              On tech, currently i`m a backend developer at Mundipagg StoneCo Company, studing .NET and .NET core framework, SOLID principles, with very strong knowledge with node, react and docker. 
+            </p>
+            <p>  
+              Just with 7 months of experience and no college degree i`ve accomplished very important collaboration within the Brazil payment market, the project was to build a software responsible to QRCODE payment method, 
+              and because of COVID-19 pandemic we added a feature not scoped to accept emergencial aid <strong>(that was given by the Brazil government at the time)</strong>, so the brazillian people be able to buy all 
+              needed things at stores with Stone's POS <strong>(point of sale)</strong>, i`m very proud of this project because i know that help a lot of people on Brazil. To such amazing project of course i would never be alone, i`ve had such a incredible team whom helped me, for us to complete together this amazing application. 
+            </p>
+
+            <h4>Contacts</h4>
+            <p>
+              [
+                <a href="https://github.com/gusbedasi">Github</a>,
+                <a href="https://linkedin.com/gusbedasi"> Linkedin</a>
+               ]
             </p>
           </section>
         </main>
