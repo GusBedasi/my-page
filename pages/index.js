@@ -1,7 +1,14 @@
+import Head from 'next/head'
+
 import Nav from '../components/menu/nav'
 
 export default function Home() {
   return(
-    <Nav />
+    <>
+      <Head>
+        <title> About </title>
+      </Head>
+      <Nav />
+    </>
   )
 }
