@@ -1,0 +1,64 @@
+.logo {
+  padding: 30px;
+}
+
+.logoContainer {
+  width: 120px;
+  height: 120px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 30%;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.burguer {
+  cursor: pointer;
+  display: none;
+}
+
+.burguer div{
+  display: flex;
+  justify-content: center;
+  width: 25px;
+  height: 5px;
+  background: #000;
+  margin: 5px;
+}
+
+@media screen and (max-width: 620px) {
+  .links {
+    width: 45%;
+    position: absolute;
+    top: 14vh;
+    right: 0px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transition: transform 0.5s ease-in;
+    transform: translateX(100%);
+    background: #16001E;
+  }
+
+  .burguer {
+    display: block;
+  }
+
+  .burguer div{
+    background: #fff;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+.navActivate {
+  transform: translateX(0%);
+}
