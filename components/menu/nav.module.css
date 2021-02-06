@@ -36,14 +36,13 @@
     position: absolute;
     top: 14vh;
     right: 0px;
-    height: 800px;
-    display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
-    width: 50%;
     transition: transform 0.5s ease-in;
     transform: translateX(100%);
     background: #16001E;
+    display: none;
   }
 
   .burguer {
@@ -61,4 +60,5 @@
 
 .navActivate {
   transform: translateX(0%);
+  display: flex;
 }
