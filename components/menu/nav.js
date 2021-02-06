@@ -17,7 +17,7 @@ export default function Menu() {
 						alt="Logo"
 					/>
 			</div>
-			<ul class={styles.links}>
+			<ul className={styles.links}>
 				<li>
 						<Link href="/">
 							Home
