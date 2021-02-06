@@ -56,7 +56,7 @@ export default function Home() {
             <p>
               [
                 <a target="_blank" href="https://github.com/gusbedasi">Github</a>,
-                <a target="_blank" href="https://linkedin.com/gusbedasi"> Linkedin</a>
+                <a target="_blank" href="https://www.linkedin.com/in/gustavobedasi/"> Linkedin</a>
                ]
             </p>
           </section>
