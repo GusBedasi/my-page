@@ -55,8 +55,8 @@ export default function Home() {
             <h4>Contacts</h4>
             <p>
               [
-                <a href="https://github.com/gusbedasi">Github</a>,
-                <a href="https://linkedin.com/gusbedasi"> Linkedin</a>
+                <a target="_blank" href="https://github.com/gusbedasi">Github</a>,
+                <a target="_blank" href="https://linkedin.com/gusbedasi"> Linkedin</a>
                ]
             </p>
           </section>
