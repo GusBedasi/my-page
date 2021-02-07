@@ -23,11 +23,6 @@ export default function Menu() {
 							Home
 						</Link>
 				</li>
-				<li>
-					<Link href="/about">
-						About
-					</Link>
-				</li>
 			</ul>
 			<div className={styles.burguer} onClick={handleToggle}>
 				<div className={styles.line1}></div>
