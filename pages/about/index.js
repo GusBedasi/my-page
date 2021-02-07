@@ -52,6 +52,10 @@ export default function Home() {
               needed things at stores with Stone's POS <strong>(point of sale)</strong>, i`m very proud of this project because i know that help a lot of people on Brazil. To such amazing project of course i would never be alone, i`ve had such a incredible team whom helped me, for us to complete together this amazing application. 
             </p>
 
+            <p>
+              Furthermore we added the newly payment method <strong>PIX</strong> developed by BACEN (Brazil Central Bank), <strong>PIX</strong> works 24/7, almost forget to tell you guys about it.
+            </p>
+
             <h4>Contacts</h4>
             <p>
               [
