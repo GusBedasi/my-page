@@ -8,6 +8,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 * {
@@ -35,11 +36,7 @@ nav {
   width: 100vw;
 }
 
-@media screen and (max-width: 620px) {
-  body {
-    overflow-x: hidden;
-  }
-  
+@media screen and (max-width: 620px) {  
   nav {
     background: #16001E;
   }
