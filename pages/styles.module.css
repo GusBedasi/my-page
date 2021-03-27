@@ -5,6 +5,16 @@
   margin: 3rem auto 6rem;
 }
 
+.container article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container article > p{
+  color: #0070f3;
+}
+
 .header {
   display: flex;
   flex-direction: column;

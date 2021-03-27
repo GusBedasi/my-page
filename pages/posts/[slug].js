@@ -14,24 +14,21 @@ const Post = ({ metadata, content }) => {
       <Nav />
 
       <div className={styles.container}>
+        <h2>
+          {metadata.title}
+        </h2>
         <article>
-          <h2>
-            {metadata.title}
-          </h2>
-          <h4>
+          <p>
             {metadata.date}
-          </h4>
-          <h4>
-            {metadata.excerpt}
-          </h4>
-            {content}
+          </p>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
         </article>
       </div>
     </>
   );
 }
 
-export default Post
+export default Post;
 
 export const getStaticProps = ({params}) => {
   const {metadata, content} = getPost(params.slug)
