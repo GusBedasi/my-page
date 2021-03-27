@@ -1,82 +1,52 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { getAllPosts } from '../scripts/blog/PostService'
 
 import Nav from '../components/menu/nav'
-
-import utilStyles from '../styles/utils.module.css'
 import styles from './styles.module.css'
 
-export default function Home() {
+export default function Blog({ posts }) {
   return (
     <>
-      <Head>
-        <title> Home </title>
-      </Head>
-
+      <Head> <title> Blog </title> </Head>
       <Nav />
-
       <div className={styles.container}>
-        <header className={styles.header}>
-          <img
-            src="/images/profile.jpg"
-            className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-            alt="Gustavo Bedasi"           
-          />
-          <h1 className={utilStyles.heading2Xl}>Gustavo Bedasi</h1>
-        </header>
-
-        <main>
-          <section className={utilStyles.headingMd}>
-            <p>
-              Hi i'm Gustavo Bedasi backend developer at Mundipagg.
-            </p>
-
-            <p>
-              So nice to see you here, to make you know me a littler better, 
-              i'm gonna tell you about me.
-            </p>
-
-            <h3>Story time</h3>
-
-            <p>
-              I`m 21 years old dude that loves his girlfriend very much and who is` moving to live by 
-              myself, doing it to improve as a person, become independent and more responsable.
-            </p>
-
-            <p>
-              On tech, currently i`m a backend developer at Mundipagg StoneCo Company, studing .NET and .NET core framework, SOLID principles, with very strong knowledge with node, react and docker. 
-            </p>
-            <p>  
-              Just with 7 months of experience and no college degree i`ve accomplished very important collaboration within the Brazil payment market, the project was to build a software responsible to QRCODE payment method, 
-              and because of COVID-19 pandemic we added a feature not scoped to accept emergencial aid <strong>(that was given by the Brazil government at the time)</strong>, so the brazillian people be able to buy all 
-              needed things at stores with Stone's POS <strong>(point of sale)</strong>, i`m very proud of this project because i know that help a lot of people on Brazil. To such amazing project of course i would never be alone, i`ve had such a incredible team whom helped me, for us to complete together this amazing application. 
-            </p>
-
-            <p>
-              Furthermore we added the newly payment method <strong>PIX</strong> developed by BACEN (Brazil Central Bank), <strong>PIX</strong> works 24/7, almost forget to tell you guys about it.
-            </p>
-
-            <h4>Contacts</h4>
-            <p>
-              [
-                <a target="_blank" href="https://github.com/gusbedasi">Github</a>,
-                <a target="_blank" href="https://www.linkedin.com/in/gustavobedasi/"> Linkedin</a>
-               ]
-            </p>
-          </section>
-        </main>
-        
-        
-        {
-          /*<div className={styles.backToHome}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
+        <h1>
+          Posts
+        </h1>
+        {posts.map((post) => (
+          <div key={post.metadata.title} className={styles.postsWrapper}>
+            <article>
+              <h2>
+                <Link href={`/posts/${post.metadata.slug}`}>
+                    {post.metadata.title}
+                </Link>
+              </h2>
+              <p>
+                {post.metadata.excerpt}
+              </p>
+            </article>
           </div>
-          */
-        }
+        ))}
+        <div className={styles.building}>
+          <h2>Building...</h2>
+          <img
+            src="/images/construction_tape.png"
+            alt="Em construção"           
+          />
+        </div>
       </div>
 
     </>
   )
+}
+
+export async function getStaticProps() {
+  const posts = getAllPosts();
+
+  return {
+    props: {
+      posts
+    }
+  }
 }

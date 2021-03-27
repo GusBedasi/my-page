@@ -1,17 +1,26 @@
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  transition: background 0.1s;
+  z-index:1;
+}
+
 .logo {
   padding: 30px;
 }
 
 .logoContainer {
   width: 120px;
-  height: 120px;
+  height: 7.5rem;
 }
 
 .links {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  width: 30%;
+  width: 23%;
   font-weight: bold;
   letter-spacing: 1.5px;
 }
@@ -30,19 +39,28 @@
   margin: 5px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1180px) {  
+  #navbar { 
+    top: 0;
+    position:fixed;
+    margin-bottom: 120px;
+    background: #16001E;    
+  }
+
   .links {
-    width: 45%;
-    position: absolute;
-    top: 12vh;
+    margin: 0;
+    width: 100vw;
+    position: fixed;
+    top: 7.5rem;
     right: 0px;
-    height: 100vh;
+    height: calc(100vh - 7.5rem);
     flex-direction: column;
     align-items: center;
     transition: transform 0.5s ease-in;
     transform: translateX(100%);
     background: #16001E;
-    display: none;
+    z-index: 10;
+    overflow-y: hidden;
   }
 
   .burguer {
@@ -60,5 +78,8 @@
 
 .navActivate {
   transform: translateX(0%);
-  display: flex;
+}
+
+.overflow{
+  overflow: hidden;
 }
