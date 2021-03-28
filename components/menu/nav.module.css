@@ -11,9 +11,22 @@
   padding: 30px;
 }
 
+.logoDark {
+  padding: 30px;
+  width: 108px;
+  height: 130px;
+  margin: -5px -60px;
+}
+
 .logoContainer {
   width: 120px;
   height: 7.5rem;
+}
+
+.logoContainerMinor {
+  width: 120px;
+  height: 7.5rem;
+  display: none;
 }
 
 .links {
@@ -63,16 +76,20 @@
     overflow-y: hidden;
   }
 
+  .logoContainer {
+    display: none;
+  }
+
+  .logoContainerMinor {
+    display: block;
+  }
+
   .burguer {
     display: block;
   }
 
   .burguer div{
     background: #fff;
-  }
-
-  .logo {
-    display: none;
   }
 }
 

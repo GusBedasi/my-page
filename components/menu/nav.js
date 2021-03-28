@@ -18,7 +18,14 @@ export default function Menu() {
 						className={styles.logo}
 						alt="Logo"
 					/>
-			</div>	
+			</div>
+			<div className={styles.logoContainerMinor}>
+					<img
+						src="/images/logo.png"
+						className={styles.logoDark}
+						alt="Logo"
+					/>
+			</div>
 			<ul className={styles.links}>
 				<li>
 					<Link href="/">
