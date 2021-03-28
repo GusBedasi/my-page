@@ -21,7 +21,7 @@ export default function Menu() {
 			</div>
 			<div className={styles.logoContainerMinor}>
 					<img
-						src="/images/logo.png"
+						src="/images/Logo.png"
 						className={styles.logoDark}
 						alt="Logo"
 					/>
