@@ -27,12 +27,12 @@ export default function Menu() {
 					/>
 			</div>
 			<ul className={styles.links}>
-				<li>
-					<Link href="/">
+				<li onClick={handleToggle}> 
+					<Link href="/" >
 						Home
 					</Link>
 				</li>
-				<li>
+				<li onClick={handleToggle}>
 					<Link href="/about">
 						About
 					</Link>
