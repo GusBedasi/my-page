@@ -9,7 +9,7 @@ const Post = ({ metadata, content }) => {
   return (
     <>
       <Head>
-        <title> About </title>
+        <title> {metadata.title} </title>
       </Head>
       <Nav />
 

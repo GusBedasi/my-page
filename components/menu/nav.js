@@ -13,18 +13,18 @@ export default function Menu() {
 	return(
     <nav id={styles.navbar}>
 			<div className={styles.logoContainer}>
-					<img
-						src="/images/logo.jpg"
-						className={styles.logo}
-						alt="Logo"
-					/>
+				<img
+					src="/images/logo.jpg"
+					className={styles.logo}
+					alt="Logo"
+				/>
 			</div>
 			<div className={styles.logoContainerMinor}>
-					<img
-						src="/images/Logo.png"
-						className={styles.logoDark}
-						alt="Logo"
-					/>
+				<img
+					src="/images/Logo.png"
+					className={styles.logoDark}
+					alt="Logo"
+				/>
 			</div>
 			<ul className={styles.links}>
 				<li onClick={handleToggle}> 
