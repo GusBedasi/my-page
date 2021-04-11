@@ -29,7 +29,7 @@ Como você resolveria? Vou te dar algumas soluções:
     * Criar um CSV
     * Ter um endpoint que faça isso que eu falei
     * Ter certeza que isso não vai causar mais problemas
-    * Averiguar um por um depois de rodar os posts para API
+    * Averiguar cada user depois de rodar os posts.
 
 ### 2. Fazer uma query no banco, rodando um update para todos os usuarios que têm esse ID de item que foi adicionado por engano
     Coisas que serão necessárias fazer:
