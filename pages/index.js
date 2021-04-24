@@ -28,12 +28,6 @@ export default function Blog({ posts }) {
             </article>
           </div>
         ))}
-        <p className={styles.contact}>
-          [
-            <a target="_blank" href="https://github.com/gusbedasi">Github</a>,
-            <a target="_blank" href="https://www.linkedin.com/in/gustavobedasi/"> Linkedin</a>
-          ]
-        </p>
       </div>
     </>
   )
