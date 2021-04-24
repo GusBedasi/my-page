@@ -135,9 +135,9 @@ Primeiro iniciamos o receive.cs para criação da fila e aguardar a mensagem est
 
 Podemos ver que a aplicação está esperando(escutando) a fila criada.
 
-![]()
+![](https://github.com/GusBedasi/my-page/blob/main/public/images/receive-create-queue.PNG?raw=true)
 
 #### Sending the message
 Uma vez iniciado ele cria a mensagem e a envia, isso é demonstrado na interface web do rabbit no gráfico, mostrando que houve a entrada de uma mensagem na fila segue imagem:
 
-![]()
+![](https://github.com/GusBedasi/my-page/blob/main/public/images/send-graph.PNG?raw=true)

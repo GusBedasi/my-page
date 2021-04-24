@@ -14,20 +14,22 @@ export default function Blog({ posts }) {
         <h1>
           Posts
         </h1>
-        {posts.map((post) => (
-          <div key={post.metadata.title} className={styles.postsWrapper}>
-            <article>
-              <h2>
-                <Link href={`/posts/${post.metadata.slug}`}>
-                    {post.metadata.title}
-                </Link>
-              </h2>
-              <p>
-                {post.metadata.excerpt}
-              </p>
-            </article>
-          </div>
-        ))}
+        <div className={styles.postsWrapper}>
+          {posts.map((post) => (
+            <div key={post.metadata.title} className={styles.postStyle}>
+              <article>
+                <h2>
+                  <Link href={`/posts/${post.metadata.slug}`}>
+                      {post.metadata.title}
+                  </Link>
+                </h2>
+                <p>
+                  {post.metadata.excerpt}
+                </p>
+              </article>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )

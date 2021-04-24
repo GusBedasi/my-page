@@ -41,11 +41,30 @@
   margin: 3rem 0 0;
 }
 
-.postsWrapper {
-  border: 1px solid black;
+.postStyle {
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid black;
   border-radius: 10px;
   padding: 0 10px;
   margin: 10px;
+}
+
+.postStyle h2{
+  font-size: 18px;
+}
+
+.postsWrapper {
+  list-style: none;
+  padding: 0px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.postsWrapper div {
+  flex-direction: row;
+  flex: 1 0 auto;
 }
 
 .building {

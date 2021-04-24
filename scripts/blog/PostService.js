@@ -24,7 +24,6 @@ const getAllPosts = () => {
   const allPostsFileName = fs.readdirSync('./_posts').sort(
       (a, b) => (new Date(b.substring(0, 8))) - (new Date(a.substring(0,8)))
     );
-  console.log(new Date("04-24-2021"));
   const posts = allPostsFileName.map((filename) => {
   const fileContent = fs.readFileSync(`./_posts/${filename}`, 'utf-8');
   const { content, data: metadata } = grayMatter(fileContent);
